@@ -22,7 +22,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 - What you've accomplished since your previous milestone
 - What your biggest challenges and triumphs were at BSE
 - A summary of key topics you learned about
-- What you hope to learn in the future after everything you've learned at BSE
+- What you hope to learn in the future after everything you've learned at BSE --> 
 
 
 
@@ -40,15 +40,12 @@ For your second milestone, explain what you've worked on since your previous mil
 
 # First Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/maOioz1Hl5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+My intensive project is the Phone-Controlled Robot Arm. The robot arm will initially be controlled by a wired controller and eventually be controlled by an Android phone. Most of the robot is made of acrylic. The robot is composed of acrylic pieces, four servos, a variety of screws and nuts, and the Arduino Nano and the Arduino Shield. The Nano acts as the "brain" of the robot arm, as that's where the code will be located. The Shield is an attachment of the Arduino, increasing the capabilities and functions of the Nano. A servo is a rotary actuator (a device that produces rotary motion and is capable of converting that motion into linear motion). Servos are composed of a motor, position sensor, and control circuit. The position sensor would sense the output shafts' position before sending that information to the control circuit. A control circuit is a type of circuit that controls other devices. The control circuit would compare where the output shaft is and where the output shaft needs to be (where the user directed it) and adjust the power going to the motor accordingly. The position sensor is constantly sending information about the location of the output shaft to the control circuit, so this process is always continuing. Each servo has three wires - a red, brown, and yellow wire. The red wire is responsible for the power supply and brings power to the servo. The brown wire is the ground wire. The ground wire completes the circuit and is connected to the control circuit. The yellow wire is the signal wire and brings signals from the control circuit to the servo. The two largest challenges I faced while working on my first milestone were testing the servos and trying to make a straight arm. Before assembling the robot, I tested the parts to make sure everything was working. Testing the servos was a huge pain because nothing was working. In order to test the servos, I needed to install a driver for the Arduino IDE. However, the wifi network blocked the website that I needed to access in order to download the driver because it was owned by a Chinese company. After some time, I found the driver on an unblocked website and installed it, but Arduino IDE wasn't recognizing it. After uninstalling and reinstalling the driver, the problem was solved and I could upload the code to the Nano. However, Only one servo worked and would follow the instructions of the code. Then I noticed there was a strange smell, and suspected the person nearby had soldered something incorrectly. Then I noticed there was smoke coming from my batteries and quickly unplugged the batteries (they were too hot to take from the battery holder). After changing the batteries and re-soldering some wires, it worked.
 
-For your first milestone, describe what your project is and how you plan to build it. You can include:
-- An explanation about the different components of your project and how they will all integrate together
-- Technical progress you've made so far
-- Challenges you're facing and solving in your future milestones
-- What your plan is to complete your project --> 
+In order for the robot arm to work properly, I have to install it perpendicular to the ground. It must go straight up. However, for some reason, the arms would just not go straight. I spent an hour or two screwing and unscrewing a single servo because for some reason, whenever I tightened the screw, it would always snap just left or just right of where I needed it to be. My next milestone will be attaching a controller to the robot arm so I can move it. 
+
 
 # Starter Project - Exploding Star Color Organ
  <iframe width="560" height="315" src="https://www.youtube.com/embed/ri9x1cUY_Ss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>]
