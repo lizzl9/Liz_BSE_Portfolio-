@@ -9,19 +9,21 @@ My phone-controlled robot arm is a robot arm on top of wheels. The robot arm and
 
 <!--- **Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
 
-![Headstone Image](logo.svg)
+![Headstone Image](logo.svg) -->
   
 # Final Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vlAkarspFro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+I have attached wheels and DC motors to my robot chassis. I've done this so that way my robot arm can move along the ground. My final milestone is the second-most difficult milestone, after the third milestone. I connected the motors to a battery of four AA batteries to make sure the motors had the same RPM, or else my robot car would not go straight. I taped many layers of duct tape onto the shaft of the motors and took a video from similar angles of each motor before combining the videos using video editing software to compare the rotating speeds of the motors. After I found the right pair of motors, I used double-sided tape to attach two DC motors to my robot chassis, then attached the wheels to the DC motor. I wired the motors to the motor driver in order to test the motors and check that all the pins on the motor drivers worked (forward and backward for each motor). Obviously, my robot chassis can't balance on two wheels, so I found a swerve ball that I could place in the front of my robot chassis. However, there was a difference in the height of the swerving ball and the wheels of the motor. Therefore I designed a block on Onshape that extended an inch or two off from the robot chassis that had holes to place the motor driver and swerve wheel. Then I wired the motors to the motor driver and watched some Youtube videos on how to connect the motor driver to the Arduino Nano. My initial set-up was just the battery connecting to the motor driver, as well as four jumper wires from the four pins (that controlled the left and right motor forward and backward motion) to pins A2, A1, 10, 11. I then wrote the code for the robot arm. 
+
+This did not work for three reasons. The first reason was my research was inaccurate. I had heard from someone that analog pins can be used as digital pins. This does not apply to Nanos, which was the Arduino I was using. I couldn't use pins A2 and A1, so I switched to pins 2 and 3 on the Cokoino shield. Also, I still had a separate battery plugged into the Nano. The circuits were separate and weren't communicating. I needed them to communicate. So I got rid of the battery for the Nano and wired a ground wire from the ground hole and a power wire from the 5V hole to the Nano. After running the code, my left motor was constantly running forward as soon as I ran it. After lots of checking, I realized I wrote my Bluetooth module as being connected to (2,1) for (RX, TX), but it was actually (0,1). So when I ran the code, the 2 pin was putting on high and causing the wheels to run. 
 
 For your final milestone, explain the outcome of your project. Key details to include are:
 - What you've accomplished since your previous milestone
 - What your biggest challenges and triumphs were at BSE
 - A summary of key topics you learned about
-- What you hope to learn in the future after everything you've learned at BSE --> 
+- What you hope to learn in the future after everything you've learned at BSE 
 
 
 
