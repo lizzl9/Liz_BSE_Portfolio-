@@ -1,7 +1,6 @@
-# Phone Controlled Robot Arm
-<!---helllo this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
+# Phone-Controlled Robot Arm
 
-You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions: -->
+My phone-controlled robot arm is a robot arm on top of wheels. The robot arm and the motor wheels are controlled by a single Android app, and the robot arm and the motor wheels are controlled via Bluetooth. 
 
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
@@ -71,9 +70,9 @@ Don't forget to place the link of where to buy each component inside the quotati
 
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+| Cokoino Robot Arm | This is the robot arm kit. | $49.99 | <a href="[https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/](https://www.amazon.com/LK-COKOINO-Compliment-Engineering-Technology/dp/B081FG1JQ1/ref=sr_1_21_sspa?crid=8TVCEASDB6RE&keywords=cokoino+robot+arm&qid=1689696025&sprefix=cokoino+robot+arm%2Caps%2C153&sr=8-21-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&psc=1)"> Link </a> |
+| L298N Motor Driver| Used for controlling the motors and wheels | $6.39 | <a href="[https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/](https://www.amazon.com/Controller-H-Bridge-Stepper-Mega2560-Duemilanove/dp/B01CC8XI60/ref=sr_1_6?crid=27HQ179I5Y8WI&keywords=motor+driver+l298n&qid=1689696173&sprefix=motor+drvier+l298n%2Caps%2C201&sr=8-6)"> Link </a> |
+| DC Motors + Wheels | Used for moving the robot arm | $7.29 | <a href="[https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/](https://www.amazon.com/HiLetgo-Smart-Robot-Plastic-6527MM/dp/B01HTC5C86/ref=sr_1_7?crid=J9WJLE7B541L&keywords=yellow+dc+motors&qid=1689708020&sprefix=yellow+dc+moto%2Caps%2C178&sr=8-7)"> Link </a> |
 
 # Other Resources/Examples
 One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
