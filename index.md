@@ -19,11 +19,12 @@ I have attached wheels and DC motors to my robot chassis. I've done this so that
 
 This did not work for three reasons. The first reason was my research was inaccurate. I had heard from someone that analog pins can be used as digital pins. This does not apply to Nanos, which was the Arduino I was using. I couldn't use pins A2 and A1, so I switched to pins 2 and 3 on the Cokoino shield. Also, I still had a separate battery plugged into the Nano. The circuits were separate and weren't communicating. I needed them to communicate. So I got rid of the battery for the Nano and wired a ground wire from the ground hole and a power wire from the 5V hole to the Nano. After running the code, my left motor was constantly running forward as soon as I ran it. After lots of checking, I realized I wrote my Bluetooth module as being connected to (2,1) for (RX, TX), but it was actually (0,1). So when I ran the code, the 2 pin was putting on high and causing the wheels to run. 
 
-For your final milestone, explain the outcome of your project. Key details to include are:
-- What you've accomplished since your previous milestone
-- What your biggest challenges and triumphs were at BSE
-- A summary of key topics you learned about
-- What you hope to learn in the future after everything you've learned at BSE 
+# Third Milestone 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JkvX1tuo0gc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+My third milestone was making my robot arm able to be controlled through my phone. All I had to do was write the code for configuring my HC-05 (Bluetooth module) as the worker,  configure the Bluetooth module into the code, and make the app that controls the arm. Although these steps sound easy, the third milestone was the hardest milestone by a long shot. It took me a few days just to configure my HC-05 as the worker module. For some reason, the light for the HC-05 was not coming on no matter what wiring I tried. I made like three different resistor diagrams two or three times each (in case my soldering was incorrect). Nothing was working. Finally, after I got rid of the resistors and just wired everything normally (except for the VCC and EN pin, I wired soldered those two together) my HC-05 finally turned on. After that, I was able to configure it as the worker, and I used the same wiring setup in order to transmit information. I shouldn't have done that as this wiring was only for my HC-05 to remain in AT command mode, but even after scouring the internet there was literally no other way to turn my HC-05 on. However, it was not receiving any information, so after a week of playing with the wiring and researching the HC-05, I was ready to give up. Eventually, I decided to just wire an HC-06 instead of an HC-5 to my Nano. I did this without any expectation for it because my HC-05 suddenly broke down and was no longer lighting up so I was pleasantly surprised when I was able to transmit information with the HC-06. Making the app and configuring the Bluetooth module into the code was extremely easy (I only struggled with it because I originally thought there was something wrong with my code/app instead of the HC-05). I made four sliders that sent information in the form of "s170" for example. "s1" meant that the slider that corresponded to Servo 1 was moved, and "70" was the intended angle for Servo 1. My next milestone/ my modification will be attaching wheels to my robot arm. 
+
 
 
 
@@ -47,11 +48,10 @@ In order for the robot arm to work properly, I have to install it perpendicular 
 
  My starter project is the Exploding Star Color Organ. A set of 25 LED lights light up in a specific pattern when sound is present. The microphone attached picks up sound and sends the signal to three transistors, which amplify the signal until it's strong enough to pass through two integrated circuits, IC 1 and IC 2. IC 1 has two pins and IC 2 has sixteen pins. Pin 3 on IC 1 sends clock pulses to IC 2, and the signal is received by pin 14. Pin 14 distributes the signal to other pins, and those pins correspond with four transistors, which correspond with six LEDs. The board also has eleven resistors over the board, which slow down/regulate the electrical current. There are four electrolytic capacitors, which store electrical energy and release it when necessary. Electrolytic capacitors use electrolytes as their dielectric material, the material in between the positively charged and negatively charged plates. There are also two potentiometers, which are like manual resistors. One controls the LEDs' sensitivity to sound, and the other controls the brightness of the LEDs. The Exploding Star Color Organ is my second starter project. My first starter project was the TV-B-Gone. I wired up the circuit correctly and soldered the joints well, but the TV-B-Gone didn't work. The board was extremely hot and stopped working after a few minutes. Despite my efforts to re-solder any potential weak solder joints, the TV-B-Gone never worked again (probably due to overheating). By working on the TV-B-Gone, I became much more proficient in soldering and was able to finish the Exploding Star Color Organ much quicker. 
 
- # Schematics 
-Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resources to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
+<!--- # Schematics 
+Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resources to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. -->
 
 # Code
-Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
 
 ```c++
 #include <SoftwareSerial.h>
@@ -368,10 +368,3 @@ void runservo() {
 
 
 
-# Other Resources/Examples
-One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
-- [Example 1](https://trashytuber.github.io/YimingJiaBlueStamp/)
-- [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
-- [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
-
-To watch the BSE tutorial on how to create a portfolio, click here. 
