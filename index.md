@@ -48,8 +48,8 @@ In order for the robot arm to work properly, I have to install it perpendicular 
 
  My starter project is the Exploding Star Color Organ. A set of 25 LED lights light up in a specific pattern when sound is present. The microphone attached picks up sound and sends the signal to three transistors, which amplify the signal until it's strong enough to pass through two integrated circuits, IC 1 and IC 2. IC 1 has two pins and IC 2 has sixteen pins. Pin 3 on IC 1 sends clock pulses to IC 2, and the signal is received by pin 14. Pin 14 distributes the signal to other pins, and those pins correspond with four transistors, which correspond with six LEDs. The board also has eleven resistors over the board, which slow down/regulate the electrical current. There are four electrolytic capacitors, which store electrical energy and release it when necessary. Electrolytic capacitors use electrolytes as their dielectric material, the material in between the positively charged and negatively charged plates. There are also two potentiometers, which are like manual resistors. One controls the LEDs' sensitivity to sound, and the other controls the brightness of the LEDs. The Exploding Star Color Organ is my second starter project. My first starter project was the TV-B-Gone. I wired up the circuit correctly and soldered the joints well, but the TV-B-Gone didn't work. The board was extremely hot and stopped working after a few minutes. Despite my efforts to re-solder any potential weak solder joints, the TV-B-Gone never worked again (probably due to overheating). By working on the TV-B-Gone, I became much more proficient in soldering and was able to finish the Exploding Star Color Organ much quicker. 
 
-<!--- # Schematics 
-Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resources to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. -->
+ # Schematics 
+ ![Schematics](screenshot.png)
 
 # Code
 
